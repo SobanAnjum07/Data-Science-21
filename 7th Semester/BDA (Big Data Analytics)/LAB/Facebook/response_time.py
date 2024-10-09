@@ -7,7 +7,7 @@ def establish_connection():
     return mysql.connector.connect(
         host="localhost", 
         user="root",  
-        password="####",
+        password="$$$$", #i have not shown the password here for security reasons
         database="facebook"  
     )
 
@@ -90,7 +90,7 @@ def fetch_member_feed(member_id, n):
 # Step 3: Measure and Plot Query Times
 
 def measure_query_performance():
-    n_values = [1000, 10000, 500000  ]  
+    n_values = [1000, 10000, 500000  ,1000000]  
     member_id = 1
     article_id = 1
 
